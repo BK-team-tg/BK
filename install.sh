@@ -4,7 +4,7 @@ install() {
 rm -rf $HOME/.telegram-cli
 sudo chmod +x tg
 chmod +x BK
-chmod +x ts
+chmod +x BT
 ./ts
 }
 get() {
