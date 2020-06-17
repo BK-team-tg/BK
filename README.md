@@ -8,7 +8,7 @@ Installation
 
 install :
 
-```git clone https://github.com/tumblr-Source/tumblr-Source && cd tumblr-Source && chmod +x install.sh && ./install.sh```
+```git clone https://github.com/BK-team-tg/bk && cd tumblr-Source && chmod +x install.sh && ./install.sh```
 
 ______________________________________________________________________________________________________________________
 
@@ -41,7 +41,7 @@ Run bot
 ______________________________________________________________________________________________________________________
 
 
-```./tumblr-Source/ts```
+```./BK/ts```
 
 ______________________________________________________________________________________________________________________
 
