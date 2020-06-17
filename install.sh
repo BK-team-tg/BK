@@ -5,7 +5,7 @@ rm -rf $HOME/.telegram-cli
 sudo chmod +x tg
 chmod +x BK
 chmod +x BT
-./ts
+./BK
 }
 get() {
 lua start.lua
