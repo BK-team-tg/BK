@@ -1,4 +1,4 @@
-tumblr-Source
+BK team
 ==============
 
 ______________________________________________________________________________________________________________________
@@ -8,7 +8,7 @@ Installation
 
 install :
 
-```git clone https://github.com/BK-team-tg/bk && cd tumblr-Source && chmod +x install.sh && ./install.sh```
+```git clone https://github.com/BK-team-tg/BK && cd BK && chmod +x install.sh && ./install.sh```
 
 ______________________________________________________________________________________________________________________
 
