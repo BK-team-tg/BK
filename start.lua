@@ -67,9 +67,9 @@ Create_Info(database:get(Server_Tshake.."Token_Tshake"),database:get(Server_Tsha
 local RunTshake = io.open("BK", 'w')
 RunTshake:write([[
 #!/usr/bin/env bash
-cd $HOME/tumblr-Source
+cd $HOME/BK
 token="]]..database:get(Server_Tshake.."Token_Tshake")..[["
-rm -fr tumblr-Source.lua
+rm -fr BK.lua
 wget "https://raw.githubusercontent.com/BK-team-tg/BK/master/BK.lua"
 while(true) do
 rm -fr ../.telegram-cli
@@ -83,8 +83,8 @@ RunTs:write([[
 cd $HOME/BK
 while(true) do
 rm -fr ../.telegram-cli
-screen -S tumblr-Source -X kill
-screen -S tumblr-Source ./BK
+screen -S BK -X kill
+screen -S BK ./BK
 done
 ]])
 RunTs:close()
