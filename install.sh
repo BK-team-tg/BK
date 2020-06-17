@@ -44,7 +44,7 @@ fi
 installall
 cd ..
 rm -rf luarocks*
-cd Tshake
+cd BK
 rm -rf luarocks*
 lua start.lua
 
