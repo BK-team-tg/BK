@@ -11,11 +11,11 @@ https   = require("ssl.https")
 sudos   = dofile("sudo.lua")
 bot_id  = token:match("(%d+)")  
 Id_Sudo = Sudo
-List_Sudos = {Id_Sudo,299938224,1153393412,352111144}
+List_Sudos = {Id_Sudo,299938224}
 print("\27[34m"..[[
 
 >> Best Source in Telegram
->> Features fast and powerful                                                                                                                                                                         
+>> Features fast and powerful                                                                                                           
 >> CH > @ZZZZJ
 >> CH > @YYYYi
 >> DEVELOPER > @ZZZZu
@@ -2210,17 +2210,14 @@ database:srem(bot_id.."Tshake:Sudo:User", userid)
 Reply_Status(msg,userid,"reply","🚯︙تم تنزيله من المطورين")  
 return false 
 end
-if res then
-if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @YYYYI ⚜️\n')   
-return false end end
 
 if text == ("رفع منشئ اساسي") and tonumber(msg.reply_to_message_id_) ~= 0 and DevBot(msg) then 
-local res = https.request('httpS://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+local res = https.request('https://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'') 
 if res then
-if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @YYYYI ⚜️\n')   
-return false end end
+if res == 'false' then 
+send(msg.chat_id_,msg.id_,'- عذراًً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
+return false 
+end end
 function Function_Tshake(extra, result, success)
 database:sadd(bot_id.."Tshake:Basic:Constructor"..msg.chat_id_, result.sender_user_id_)
 Reply_Status(msg,result.sender_user_id_,"reply","🚯︙تم ترقيته منشئ اساسي")  
@@ -2228,12 +2225,14 @@ end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Tshake, nil)
 return false
 end
+
 if text == ("رفع منشئ اساسي") and tonumber(msg.reply_to_message_id_) ~= 0 and DevBot(msg) then 
-local res = https.request('httpS://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+local res = https.request('https://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
 if res then
-if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @YYYYI ⚜️\n')   
-return false end end
+if res == 'false' then 
+send(msg.chat_id_,msg.id_,'- عذراًً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
+return false 
+end end 
 tdcli_function ({ID = "GetChatMember",chat_id_ = msg.chat_id_,user_id_ = msg.sender_user_id_},function(arg,da) 
 if da.status_.ID == "ChatMemberStatusCreator" then
 function Function_Tshake(extra, result, success)
@@ -2246,11 +2245,13 @@ end
 end,nil)
 end
 if text and text:match("^رفع منشئ اساسي @(.*)$") and DevBot(msg) then 
-local res = https.request('httpS://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+local res = https.request('https://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+ 
 if res then
-if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @YYYYI ⚜️\n')   
-return false end end
+if res == 'false' then 
+send(msg.chat_id_,msg.id_,'- عذراًً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
+return false 
+end end
 local username = text:match("^رفع منشئ اساسي @(.*)$")
 function Function_Tshake(extra, result, success)
 if result.id_ then
@@ -2268,22 +2269,26 @@ tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Tshake,
 return false
 end
 if text and text:match("^رفع منشئ اساسي (%d+)$") and DevBot(msg) then 
-local res = https.request('httpS://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+local res = https.request('https://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+ 
 if res then
-if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @YYYYI ⚜️\n')   
-return false end end
+if res == 'false' then 
+send(msg.chat_id_,msg.id_,'- عذراًً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
+return false 
+end end
 local userid = text:match("^رفع منشئ اساسي (%d+)$") 
 database:sadd(bot_id.."Tshake:Basic:Constructor"..msg.chat_id_, userid)
 Reply_Status(msg,userid,"reply","🚯︙تم ترقيته منشئ اساسي")  
 return false
 end
 if text == ("تنزيل منشئ اساسي") and tonumber(msg.reply_to_message_id_) ~= 0 and DevBot(msg) then 
-local res = https.request('httpS://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+local res = https.request('https://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+ 
 if res then
-if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @YYYYI ⚜️\n')   
-return false end end
+if res == 'false' then 
+send(msg.chat_id_,msg.id_,'- عذراًً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
+return false 
+end end
 function Function_Tshake(extra, result, success)
 database:srem(bot_id.."Tshake:Basic:Constructor"..msg.chat_id_, result.sender_user_id_)
 Reply_Status(msg,result.sender_user_id_,"reply","🚯︙تم تنزيله من المنشئين")  
@@ -2292,11 +2297,13 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 if text and text:match("^تنزيل منشئ اساسي @(.*)$") and DevBot(msg) then 
-local res = https.request('httpS://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+local res = https.request('https://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+ 
 if res then
-if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @YYYYI ⚜️\n')   
-return false end end
+if res == 'false' then 
+send(msg.chat_id_,msg.id_,'- عذراًً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
+return false 
+end end
 local username = text:match("^تنزيل منشئ اساسي @(.*)$")
 function Function_Tshake(extra, result, success)
 if result.id_ then
@@ -2311,11 +2318,13 @@ tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Tshake,
 return false
 end
 if text and text:match("^تنزيل منشئ اساسي (%d+)$") and DevBot(msg) then 
-local res = https.request('httpS://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+local res = https.request('https://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+ 
 if res then
-if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @YYYYI ⚜️\n')   
-return false end end
+if res == 'false' then 
+send(msg.chat_id_,msg.id_,'- عذراًً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
+return false 
+end end
 local userid = text:match("^تنزيل منشئ اساسي (%d+)$") 
 database:srem(bot_id.."Tshake:Basic:Constructor"..msg.chat_id_, userid)
 Reply_Status(msg,userid,"reply","🚯︙تم تنزيله من المنشئين")  
@@ -2323,11 +2332,13 @@ return false
 end
 
 if text == "رفع منشئ" and tonumber(msg.reply_to_message_id_) ~= 0 and BasicConstructor(msg) then 
-local res = https.request('httpS://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+local res = https.request('https://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+ 
 if res then
-if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @YYYYI ⚜️\n')   
-return false end end
+if res == 'false' then 
+send(msg.chat_id_,msg.id_,'- عذراًً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
+return false 
+end end
 function Function_Tshake(extra, result, success)
 database:sadd(bot_id.."Tshake:Constructor"..msg.chat_id_, result.sender_user_id_)
 Reply_Status(msg,result.sender_user_id_,"reply","🚯︙تم ترقيته منشئ في المجموعه")  
@@ -2335,11 +2346,13 @@ end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_Tshake, nil)
 end
 if text and text:match("^رفع منشئ @(.*)$") and BasicConstructor(msg) then 
-local res = https.request('httpS://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+local res = https.request('https://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+ 
 if res then
-if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @YYYYI ⚜️\n')   
-return false end end
+if res == 'false' then 
+send(msg.chat_id_,msg.id_,'- عذراًً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
+return false 
+end end
 local username = text:match("^رفع منشئ @(.*)$")
 function Function_Tshake(extra, result, success)
 if result.id_ then
@@ -2357,11 +2370,13 @@ tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Tshake,
 end
 ------------------------------------------------------------------------
 if text and text:match("^رفع منشئ (%d+)$") and BasicConstructor(msg) then 
-local res = https.request('httpS://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+local res = https.request('https://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+ 
 if res then
-if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @YYYYI ⚜️\n')   
-return false end end
+if res == 'false' then 
+send(msg.chat_id_,msg.id_,'- عذراًً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
+return false 
+end end
 local userid = text:match("^رفع منشئ (%d+)$")
 database:sadd(bot_id.."Tshake:Constructor"..msg.chat_id_, userid)
 Reply_Status(msg,userid,"reply","🚯︙تم ترقيته منشئ في المجموعه")  
@@ -2375,11 +2390,13 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 end
 ------------------------------------------------------------------------
 if text and text:match("^تنزيل منشئ @(.*)$") and BasicConstructor(msg) then 
-local res = https.request('httpS://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+local res = https.request('https://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+ 
 if res then
-if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @YYYYI ⚜️\n')   
-return false end end
+if res == 'false' then 
+send(msg.chat_id_,msg.id_,'- عذراًً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
+return false 
+end end
 local username = text:match("^تنزيل منشئ @(.*)$")
 function Function_Tshake(extra, result, success)
 if result.id_ then
@@ -2393,22 +2410,26 @@ tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Tshake,
 end
 ------------------------------------------------------------------------
 if text and text:match("^تنزيل منشئ (%d+)$") and BasicConstructor(msg) then 
-local res = https.request('httpS://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+local res = https.request('https://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+ 
 if res then
-if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @YYYYI ⚜️\n')   
-return false end end
+if res == 'false' then 
+send(msg.chat_id_,msg.id_,'- عذراًً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
+return false 
+end end
 local userid = text:match("^تنزيل منشئ (%d+)$")
 database:srem(bot_id.."Tshake:Constructor"..msg.chat_id_, userid)
 Reply_Status(msg,userid,"reply","🚯︙تم تنزيله من المنشئين")  
 end
 
 if text == ("رفع مدير") and tonumber(msg.reply_to_message_id_) ~= 0 and Constructor(msg) then 
-local res = https.request('httpS://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+local res = https.request('https://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+ 
 if res then
-if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @YYYYI ⚜️\n')   
-return false end end
+if res == 'false' then 
+send(msg.chat_id_,msg.id_,'- عذراًً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
+return false 
+end end
 function Function_Tshake(extra, result, success)
 database:sadd(bot_id.."Tshake:Manager"..msg.chat_id_, result.sender_user_id_)
 Reply_Status(msg,result.sender_user_id_,"reply","🚯︙تم ترقيته مدير المجموعه")  
@@ -2417,11 +2438,13 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end  
 if text and text:match("^رفع مدير @(.*)$") and Constructor(msg) then 
-local res = https.request('httpS://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+local res = https.request('https://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+ 
 if res then
-if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @YYYYI ⚜️\n')   
-return false end end
+if res == 'false' then 
+send(msg.chat_id_,msg.id_,'- عذراًً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
+return false 
+end end
 local username = text:match("^رفع مدير @(.*)$") 
 function Function_Tshake(extra, result, success)
 if result.id_ then
@@ -2440,22 +2463,26 @@ return false
 end 
 
 if text and text:match("^رفع مدير (%d+)$") and Constructor(msg) then 
-local res = https.request('httpS://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+local res = https.request('https://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+ 
 if res then
-if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @YYYYI ⚜️\n')   
-return false end end
+if res == 'false' then 
+send(msg.chat_id_,msg.id_,'- عذراًً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
+return false 
+end end
 local userid = text:match("^رفع مدير (%d+)$") 
 database:sadd(bot_id.."Tshake:Manager"..msg.chat_id_, userid)
 Reply_Status(msg,userid,"reply","🚯︙تم ترقيته مدير المجموعه")  
 return false
 end  
 if text == ("تنزيل مدير") and tonumber(msg.reply_to_message_id_) ~= 0 and Constructor(msg) then 
-local res = https.request('httpS://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+local res = https.request('https://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+ 
 if res then
-if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @YYYYI ⚜️\n')   
-return false end end
+if res == 'false' then 
+send(msg.chat_id_,msg.id_,'- عذراًً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
+return false 
+end end
 function Function_Tshake(extra, result, success)
 database:srem(bot_id.."Tshake:Manager"..msg.chat_id_, result.sender_user_id_)
 Reply_Status(msg,result.sender_user_id_,"reply","🚯︙تم تنزيله من المدراء")  
@@ -2464,11 +2491,13 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end  
 if text and text:match("^تنزيل مدير @(.*)$") and Constructor(msg) then 
-local res = https.request('httpS://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+local res = https.request('https://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+ 
 if res then
-if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @YYYYI ⚜️\n')   
-return false end end
+if res == 'false' then 
+send(msg.chat_id_,msg.id_,'- عذراًً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
+return false 
+end end
 local username = text:match("^تنزيل مدير @(.*)$")
 function Function_Tshake(extra, result, success)
 if result.id_ then
@@ -2482,11 +2511,13 @@ tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Tshake,
 return false
 end  
 if text and text:match("^تنزيل مدير (%d+)$") and Constructor(msg) then 
-local res = https.request('httpS://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+local res = https.request('https://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+ 
 if res then
-if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @YYYYI ⚜️\n')   
-return false end end
+if res == 'false' then 
+send(msg.chat_id_,msg.id_,'- عذراًً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
+return false 
+end end
 local userid = text:match("^تنزيل مدير (%d+)$") 
 database:srem(bot_id.."Tshake:Manager"..msg.chat_id_, userid)
 Reply_Status(msg,userid,"reply","🚯︙تم تنزيله من المدراء")  
@@ -2494,11 +2525,12 @@ return false
 end
 
 if text == ("رفع ادمن") and tonumber(msg.reply_to_message_id_) ~= 0 and Owner(msg) then 
-local res = https.request('httpS://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+local res = https.request('https://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
 if res then
-if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @YYYYI ⚜️\n')   
-return false end end
+if res == 'false' then 
+send(msg.chat_id_,msg.id_,'- عذراًً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
+return false 
+end end
 if not Constructor(msg) and database:get(bot_id.."Add:Group:Cheking"..msg.chat_id_) then 
 send(msg.chat_id_, msg.id_,'◾ لا تستطيع رفع احد وذالك لان تم تعطيل الرفع من قبل المنشئين')
 return false
@@ -2511,11 +2543,13 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 if text and text:match("^رفع ادمن @(.*)$") and Owner(msg) then 
-local res = https.request('httpS://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+local res = https.request('https://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+ 
 if res then
-if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @YYYYI ⚜️\n')   
-return false end end
+if res == 'false' then 
+send(msg.chat_id_,msg.id_,'- عذراًً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
+return false 
+end end
 local username = text:match("^رفع ادمن @(.*)$")
 if not Constructor(msg) and database:get(bot_id.."Add:Group:Cheking"..msg.chat_id_) then 
 send(msg.chat_id_, msg.id_,'◾ لا تستطيع رفع احد وذالك لان تم تعطيل الرفع من قبل المنشئين')
@@ -2537,12 +2571,13 @@ tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Tshake,
 return false
 end
 if text and text:match("^رفع ادمن (%d+)$") and Owner(msg) then 
-local res = https.request('httpS://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+local res = https.request('https://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+ 
 if res then
-if res == 'false' then
-send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@YYYYi] ⚜️')   
+if res == 'false' then 
+send(msg.chat_id_,msg.id_,'- عذراًً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
 return false 
-end
+end end
 local userid = text:match("^رفع ادمن (%d+)$")
 if not Constructor(msg) and database:get(bot_id.."Add:Group:Cheking"..msg.chat_id_) then 
 send(msg.chat_id_, msg.id_,'◾ لا تستطيع رفع احد وذالك لان تم تعطيل الرفع من قبل المنشئين')
@@ -2553,12 +2588,13 @@ Reply_Status(msg,userid,"reply","🚯︙تم ترقيته ادمن للمجمو�
 return false
 end
 if text == ("تنزيل ادمن") and tonumber(msg.reply_to_message_id_) ~= 0 and Owner(msg) then 
-local res = https.request('httpS://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+local res = https.request('https://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+ 
 if res then
-if res == 'false' then
-send(msg.chat_id_,msg.id_,'- عذراًً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]⚜️')   
+if res == 'false' then 
+send(msg.chat_id_,msg.id_,'- عذراًً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
 return false 
-end
+end end
 function Function_Tshake(extra, result, success)
 database:srem(bot_id.."Tshake:Mod:User"..msg.chat_id_, result.sender_user_id_)
 Reply_Status(msg,result.sender_user_id_,"reply","🚯︙تم تنزيله من ادمنيه المجموعه")  
@@ -2567,11 +2603,13 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 if text and text:match("^تنزيل ادمن @(.*)$") and Owner(msg) then 
-local res = https.request('httpS://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+local res = https.request('https://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+ 
 if res then
-if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @YYYYI ⚜️\n')   
-return false end end
+if res == 'false' then 
+send(msg.chat_id_,msg.id_,'- عذراًً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
+return false 
+end end
 local username = text:match("^تنزيل ادمن @(.*)$") 
 function Function_Tshake(extra, result, success)
 if result.id_ then
@@ -2585,11 +2623,13 @@ tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Tshake,
 return false
 end
 if text and text:match("^تنزيل ادمن (%d+)$") and Owner(msg) then 
-local res = https.request('httpS://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+local res = https.request('https://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+ 
 if res then
-if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @YYYYI ⚜️\n')   
-return false end end
+if res == 'false' then 
+send(msg.chat_id_,msg.id_,'- عذراًً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
+return false 
+end end
 local userid = text:match("^تنزيل ادمن (%d+)$")
 database:srem(bot_id.."Tshake:Mod:User"..msg.chat_id_, userid)
 Reply_Status(msg,userid,"reply","🚯︙تم تنزيله من ادمنيه المجموعه")  
@@ -2597,11 +2637,13 @@ return false
 end
 
 if text == ("رفع مميز") and tonumber(msg.reply_to_message_id_) ~= 0 and Addictive(msg) then 
-local res = https.request('httpS://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+local res = https.request('https://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+ 
 if res then
-if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @YYYYI ⚜️\n')   
-return false end end
+if res == 'false' then 
+send(msg.chat_id_,msg.id_,'- عذراًً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
+return false 
+end end
 if not Constructor(msg) and database:get(bot_id.."Add:Group:Cheking"..msg.chat_id_) then 
 send(msg.chat_id_, msg.id_,'◾ لا تستطيع رفع احد وذالك لان تم تعطيل الرفع من قبل المنشئين')
 return false
@@ -2614,11 +2656,13 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 if text and text:match("^رفع مميز @(.*)$") and Addictive(msg) then 
-local res = https.request('httpS://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+local res = https.request('https://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+ 
 if res then
-if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @YYYYI ⚜️\n')   
-return false end end
+if res == 'false' then 
+send(msg.chat_id_,msg.id_,'- عذراًً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
+return false 
+end end
 local username = text:match("^رفع مميز @(.*)$") 
 if not Constructor(msg) and database:get(bot_id.."Add:Group:Cheking"..msg.chat_id_) then 
 send(msg.chat_id_, msg.id_,'◾ لا تستطيع رفع احد وذالك لان تم تعطيل الرفع من قبل المنشئين')
@@ -2641,11 +2685,13 @@ return false
 end
 
 if text and text:match("^رفع مميز (%d+)$") and Addictive(msg) then 
-local res = https.request('httpS://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+local res = https.request('https://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+ 
 if res then
-if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @YYYYI ⚜️\n')   
-return false end end
+if res == 'false' then 
+send(msg.chat_id_,msg.id_,'- عذراًً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
+return false 
+end end
 local userid = text:match("^رفع مميز (%d+)$")
 if not Constructor(msg) and database:get(bot_id.."Add:Group:Cheking"..msg.chat_id_) then 
 send(msg.chat_id_, msg.id_,'◾ لا تستطيع رفع احد وذالك لان تم تعطيل الرفع من قبل المنشئين')
@@ -2657,11 +2703,13 @@ return false
 end
 
 if (text == ("تنزيل مميز")) and tonumber(msg.reply_to_message_id_) ~= 0 and Addictive(msg) then 
-local res = https.request('httpS://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+local res = https.request('https://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+ 
 if res then
-if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @YYYYI ⚜️\n')   
-return false end end
+if res == 'false' then 
+send(msg.chat_id_,msg.id_,'- عذراًً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
+return false 
+end end
 function Function_Tshake(extra, result, success)
 database:srem(bot_id.."Tshake:Special:User"..msg.chat_id_, result.sender_user_id_)
 Reply_Status(msg,result.sender_user_id_,"reply","🚯︙تم تنزيله من المميزين")  
@@ -2670,11 +2718,13 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 if text and text:match("^تنزيل مميز @(.*)$") and Addictive(msg) then 
-local res = https.request('httpS://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+local res = https.request('https://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+ 
 if res then
-if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @YYYYI ⚜️\n')   
-return false end end
+if res == 'false' then 
+send(msg.chat_id_,msg.id_,'- عذراًً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
+return false 
+end end
 local username = text:match("^تنزيل مميز @(.*)$") 
 function Function_Tshake(extra, result, success)
 if result.id_ then
@@ -2688,22 +2738,26 @@ tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_Tshake,
 return false
 end
 if text and text:match("^تنزيل مميز (%d+)$") and Addictive(msg) then 
-local res = https.request('httpS://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+local res = https.request('https://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+ 
 if res then
-if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @YYYYI ⚜️\n')   
-return false end end
+if res == 'false' then 
+send(msg.chat_id_,msg.id_,'- عذراًً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
+return false 
+end end
 local userid = text:match("^تنزيل مميز (%d+)$") 
 database:srem(bot_id.."Tshake:Special:User"..msg.chat_id_, userid)
 Reply_Status(msg,userid,"reply","🚯︙تم تنزيله من المميزين")  
 return false
 end  
 if text and text:match("رفع (.*)") and tonumber(msg.reply_to_message_id_) > 0 and Addictive(msg) then 
-local res = https.request('httpS://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+local res = https.request('https://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+ 
 if res then
-if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @YYYYI ⚜️\n')   
-return false end end 
+if res == 'false' then 
+send(msg.chat_id_,msg.id_,'- عذراًً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
+return false 
+end end 
 local RTPA = text:match("رفع (.*)")
 if database:sismember(bot_id.."Tshake:Coomds"..msg.chat_id_,RTPA) then
 function by_reply(extra, result, success)   
@@ -2730,11 +2784,13 @@ tdcli_function ({ ID = "GetMessage", chat_id_ = msg.chat_id_, message_id_ = tonu
 end
 end
 if text and text:match("تنزيل (.*)") and tonumber(msg.reply_to_message_id_) > 0 and Addictive(msg) then 
-local res = https.request('httpS://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+local res = https.request('https://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+ 
 if res then
-if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @YYYYI ⚜️\n')   
-return false end end 
+if res == 'false' then 
+send(msg.chat_id_,msg.id_,'- عذراًً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
+return false 
+end end 
 local RTPA = text:match("تنزيل (.*)")
 if database:sismember(bot_id.."Tshake:Coomds"..msg.chat_id_,RTPA) then
 function by_reply(extra, result, success)   
@@ -2761,11 +2817,13 @@ tdcli_function ({ ID = "GetMessage", chat_id_ = msg.chat_id_, message_id_ = tonu
 end
 end
 if text and text:match("^رفع (.*) @(.*)") and Addictive(msg) then 
-local res = https.request('httpS://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+local res = https.request('https://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+ 
 if res then
-if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @YYYYI ⚜️\n')   
-return false end end 
+if res == 'false' then 
+send(msg.chat_id_,msg.id_,'- عذراًً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
+return false 
+end end 
 local text1 = {string.match(text, "^(رفع) (.*) @(.*)$")}
 if database:sismember(bot_id.."Tshake:Coomds"..msg.chat_id_,text1[2]) then
 function py_username(extra, result, success)   
@@ -2795,11 +2853,13 @@ tdcli_function ({ID = "SearchPublicChat",username_ = text1[3]},py_username,nil)
 end 
 end
 if text and text:match("^تنزيل (.*) @(.*)") and Addictive(msg) then 
-local res = https.request('httpS://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+local res = https.request('https://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+ 
 if res then
-if res == 'false' then
-send(msg.chat_id_, msg.id_,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @YYYYI ⚜️\n')   
-return false end end 
+if res == 'false' then 
+send(msg.chat_id_,msg.id_,'- عذراًً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
+return false 
+end end 
 local text1 = {string.match(text, "^(تنزيل) (.*) @(.*)$")}
 if database:sismember(bot_id.."Tshake:Coomds"..msg.chat_id_,text1[2]) then
 function py_username(extra, result, success)   
@@ -5702,12 +5762,12 @@ end,nil)
 end
 return false
 end
-if text == ("تحديث السورس") and DevBk(msg) then  
+if text == ("تحديث السورس") and DevTshake(msg) then  
 send(msg.chat_id_,msg.id_,'☑︙تم التحديث')
 os.execute('rm -rf BK.lua')
 os.execute('rm -rf start.lua')
 download_to_file('https://raw.githubusercontent.com/BK-team-tg/BK/master/BK.lua', 'BK.lua') 
-download_to_file('https://raw.githubusercontent.com/BK-team-tg/TBK/master/start.lua', 'start.lua') 
+download_to_file('https://raw.githubusercontent.com/BK-team-tg/BK/master/start.lua', 'start.lua') 
 dofile('BK.lua')  
 return false
 end
@@ -5864,7 +5924,7 @@ local json_file, res = https.request("https://raw.githubusercontent.com/tshakeab
 if res == 200 then
 os.execute("rm -fr Tshake_Files/"..file)
 send(msg.chat_id_, msg.id_,t) 
-dofile('BK.lua')  
+dofile('Tshake.lua')  
 else
 send(msg.chat_id_, msg.id_,"*📮︙ عذراً لا يوجد هاكذا ملف في المتجر *\n") 
 end
@@ -5886,7 +5946,7 @@ local chek = io.open("Tshake_Files/"..file,'w+')
 chek:write(json_file)
 chek:close()
 send(msg.chat_id_, msg.id_,t) 
-dofile('BK.lua')  
+dofile('Tshake.lua')  
 else
 send(msg.chat_id_, msg.id_,"*📮︙ عذراً لا يوجد هاكذا ملف في المتجر *\n") 
 end
@@ -6223,12 +6283,11 @@ end ---- Chat_Type = 'GroupBot'
 end ---- Chat_Type = 'GroupBot' 
 
 if text == 'تفعيل' and DevBot(msg) then 
-local res = https.request('httpS://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
-if res then
-if res == 'false' then
-send(msg.chat_id_,msg.id_,'- عذراً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
+local res = https.request('https://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+ 
+if res then if res == 'false' then send(msg.chat_id_,msg.id_,'- عذراً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
 return false 
-end
+end end
 if msg.can_be_deleted_ == false then 
 send(msg.chat_id_, msg.id_,'🚸︙البوت ليس ادمن يرجى ترقيتي !') 
 return false  
@@ -6276,12 +6335,13 @@ end,nil)
 end,nil)
 end
 if text == 'تعطيل' and DevBot(msg) then 
-local res = https.request('httpS://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+local res = https.request('https://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+ 
 if res then
-if res == 'false' then
-send(msg.chat_id_,msg.id_,'- عذراً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
+if res == 'false' then 
+send(msg.chat_id_,msg.id_,'- عذراًً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
 return false 
-end
+end end
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
 tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,chat)  
 if not database:sismember(bot_id..'Tshake:Chek:Groups',msg.chat_id_) then
@@ -6320,16 +6380,17 @@ end,nil)
 end,nil) 
 end
 if text == 'تفعيل' and not DevBot(msg) and not database:get(bot_id..'Tshake:Free:Add:Bots') then 
-local res = https.request('httpS://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+local res = https.request('https://bariq.karax.cf/zzzzj.php?id='..msg.sender_user_id_..'')
+ 
 if res then
-if res == 'false' then
-send(msg.chat_id_,msg.id_,'- عذراً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
+if res == 'false' then 
+send(msg.chat_id_,msg.id_,'- عذراًً لايمكنك استخدام البوت\n- عليك الاشتراك في القناة\n- [@YYYYi]')   
 return false 
-end
-if msg.can_be_deleted_ == false then 
+end end
+if msg.can_be_deleted_ == false then  
 send(msg.chat_id_, msg.id_,'🚸︙البوت ليس ادمن يرجى ترقيتي !') 
 return false  
-end
+end 
 tdcli_function ({ ID = "GetChannelFull", channel_id_ = msg.chat_id_:gsub("-100","")}, function(arg,data)  
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
 tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,chat)  
